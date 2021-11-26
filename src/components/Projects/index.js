@@ -1,6 +1,11 @@
 // == Import npm
 import React from 'react';
-import { Card, Row, Col, CardGroup } from 'react-bootstrap';
+import {
+  Card,
+  Row,
+  Col,
+  CardGroup,
+} from 'react-bootstrap';
 
 // == Import local
 import './projects.scss';
@@ -23,14 +28,30 @@ const Projects = () => (
                 src={sportFinder}
                 alt="Sport Finder"
               />
-              <Card.Body>
-                <Card.Title>Card Title</Card.Title>
-                <Card.Text>
-                  Some quick example text to build on the card title and make up the bulk of
-                  the card's content.
+              <Card.Body className="projects-cards-body">
+                <Card.Title className="projects-cards-title">
+                  Sport Finder
+                </Card.Title>
+                <Card.Text className="projects-cards-text">
+                  Projet de fin de formation.
+                  Recherchez un sport à pratiquer près de chez vous ou partout en France.
                 </Card.Text>
-                <Card.Link href="#">Card Link</Card.Link>
-                <Card.Link href="#">Another Link</Card.Link>
+                <div className="projects-cards-links">
+                  <Card.Link
+                    className="projects-cards-link"
+                    href="https://sport-finder.netlify.app/"
+                    target="_blank"
+                  >
+                    Go to Sport Finder
+                  </Card.Link>
+                  <Card.Link
+                    className="projects-cards-link"
+                    href="https://github.com/SebPARMENTIER/Sport-Finder"
+                    target="_blank"
+                  >
+                    GitHub Page
+                  </Card.Link>
+                </div>
               </Card.Body>
             </Card>
           </div>
@@ -42,14 +63,30 @@ const Projects = () => (
                 src={converter}
                 alt="Converter"
               />
-              <Card.Body>
-                <Card.Title>Card Title</Card.Title>
-                <Card.Text>
-                  Some quick example text to build on the card title and make up the bulk of
-                  the card's content.
+              <Card.Body className="projects-cards-body">
+                <Card.Title className="projects-cards-title">
+                  Converter
+                </Card.Title>
+                <Card.Text className="projects-cards-text">
+                  Projet effectué pendant la formation.
+                  Convertissez un montant en euros vers une autre devise.
                 </Card.Text>
-                <Card.Link href="#">Card Link</Card.Link>
-                <Card.Link href="#">Another Link</Card.Link>
+                <div className="projects-cards-links">
+                  <Card.Link
+                    className="projects-cards-link"
+                    href="https://seb-converter.netlify.app/"
+                    target="_blank"
+                  >
+                    Go to Converter
+                  </Card.Link>
+                  <Card.Link
+                    className="projects-cards-link"
+                    href="https://github.com/SebPARMENTIER/Converter"
+                    target="_blank"
+                  >
+                    GitHub Page
+                  </Card.Link>
+                </div>
               </Card.Body>
             </Card>
           </div>
@@ -61,14 +98,30 @@ const Projects = () => (
                 src={pokedex}
                 alt="Pokedex"
               />
-              <Card.Body>
-                <Card.Title>Card Title</Card.Title>
-                <Card.Text>
-                  Some quick example text to build on the card title and make up the bulk of
-                  the card's content.
+              <Card.Body className="projects-cards-body">
+                <Card.Title className="projects-cards-title">
+                  Pokedex
+                </Card.Title>
+                <Card.Text className="projects-cards-text">
+                  Projet effectué pendant la formation.
+                  Retrouvez les 151 premiers pokemons dans ce pokedex.
                 </Card.Text>
-                <Card.Link href="#">Card Link</Card.Link>
-                <Card.Link href="#">Another Link</Card.Link>
+                <div className="projects-cards-links">
+                  <Card.Link
+                    className="projects-cards-link"
+                    href="https://seb-pokedex.herokuapp.com/"
+                    target="_blank"
+                  >
+                    Pokedex
+                  </Card.Link>
+                  <Card.Link
+                    className="projects-cards-link"
+                    href="https://github.com/SebPARMENTIER/Pokedex"
+                    target="_blank"
+                  >
+                    GitHub Page
+                  </Card.Link>
+                </div>
               </Card.Body>
             </Card>
           </div>
@@ -80,14 +133,23 @@ const Projects = () => (
                 src={comingSoon}
                 alt="Coming soon"
               />
-              <Card.Body>
-                <Card.Title>Card Title</Card.Title>
+              <Card.Body className="projects-cards-body">
+                <Card.Title className="projects-cards-title">
+                  Coming Soon
+                </Card.Title>
                 <Card.Text className="projects-cards-text">
-                  Some quick example text to build on the card title and make up the bulk of
-                  the card's content.
+                  D'autres projets seront bientôt disponibles.
+                  En attendant, n'hésitez pas à visiter ma page GitHub en attendant. A bientôt.
                 </Card.Text>
-                <Card.Link href="#">Card Link</Card.Link>
-                <Card.Link href="#">Another Link</Card.Link>
+                <div className="projects-cards-links">
+                  <Card.Link
+                    className="projects-cards-link"
+                    href="https://github.com/SebPARMENTIER"
+                    target="_blank"
+                  >
+                    My GitHub Page
+                  </Card.Link>
+                </div>
               </Card.Body>
             </Card>
           </div>
