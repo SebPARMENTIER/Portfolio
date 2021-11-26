@@ -13,12 +13,13 @@ import './app.scss';
 // == Composant
 const App = () => (
   <div className="app">
-    <Container fluid="true" className="vh-100">
+    <Container fluid="true" className="h-100">
       <Row>
         <Col className="col-sm-auto col-md-auto col-lg-auto">
           <Header />
           <Routes>
             <Route exact path="/" component={Home} />
+            <Route exact path="/projects" component={Projects} />
           </Routes>
           <Home />
           <Projects />
