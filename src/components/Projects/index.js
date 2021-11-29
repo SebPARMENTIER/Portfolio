@@ -139,7 +139,7 @@ const Projects = () => (
                 </Card.Title>
                 <Card.Text className="projects-cards-text">
                   D'autres projets seront bientôt disponibles.
-                  En attendant, n'hésitez pas à visiter ma page GitHub en attendant. A bientôt.
+                  En attendant, n'hésitez pas à visiter ma page GitHub. A bientôt.
                 </Card.Text>
                 <div className="projects-cards-links">
                   <Card.Link

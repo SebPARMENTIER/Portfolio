@@ -19,12 +19,13 @@ const App = () => (
         <Col className="col-sm-auto col-md-auto col-lg-auto">
           <Header />
           <Routes>
-            <Route exact path="/" component={Home} />
-            <Route exact path="/projects" component={Projects} />
+            <Route exact path="/" element={<Home/>} />
+            <Route exact path="/projects" element={<Projects/>} />
+            <Route exact path="/contact" element={<Contact/>} />
           </Routes>
-          <Home />
+          {/* <Home />
           <Projects />
-          <Contact />
+          <Contact /> */}
         </Col>
       </Row>
     </Container>

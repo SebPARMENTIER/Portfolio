@@ -103,7 +103,7 @@ const Contact = () => {
           sm="auto"
           md="auto"
           lg="auto"
-          controlId="validationEmail"
+          controlId="validationMessage"
         >
           <Form.Label>Message</Form.Label>
           <Form.Control

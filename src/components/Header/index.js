@@ -24,6 +24,12 @@ const Header = () => (
           >
             Réalisations
           </Link>
+          <Link
+            className="header-home-link"
+            to="/contact"
+          >
+            Contact
+          </Link>
         </Col>
       </Row>
     </div>
