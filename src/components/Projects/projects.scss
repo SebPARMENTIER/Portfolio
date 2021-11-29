@@ -1,5 +1,5 @@
 .projects {  
-  &-cards {  
+  &-cards {
     &-group {
       display: flex;
       justify-content: center;
@@ -51,4 +51,10 @@
       }
     }
   }
+}
+.projects-card:hover {
+  transform: scale(1.1);
+}
+.projects-card {
+  transition: 0.5s;
 }

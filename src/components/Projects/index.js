@@ -112,7 +112,7 @@ const Projects = () => (
                     href="https://seb-pokedex.herokuapp.com/"
                     target="_blank"
                   >
-                    Pokedex
+                    Go to Pokedex
                   </Card.Link>
                   <Card.Link
                     className="projects-cards-link"
