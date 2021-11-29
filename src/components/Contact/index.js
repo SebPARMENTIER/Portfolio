@@ -48,8 +48,12 @@ const Contact = () => {
     <Form
       noValidate validated={validated}
       onSubmit={handleSubmit, sendEmail}
+      sm="auto"
+      md="auto"
+      lg="auto"
     >
       <Row>
+        <div className="name">
         <Form.Group
           as={Col}
           sm="auto"
@@ -82,6 +86,8 @@ const Contact = () => {
           />
           <Form.Control.Feedback>Prénom OK</Form.Control.Feedback>
         </Form.Group>
+        </div>
+        <div className="mail">
         <Form.Group
           as={Col}
           sm="auto"
@@ -98,6 +104,8 @@ const Contact = () => {
           />
           <Form.Control.Feedback>Email OK</Form.Control.Feedback>
         </Form.Group>
+        </div>
+        <div className="message">
         <Form.Group
           as={Col}
           sm="auto"
@@ -112,11 +120,15 @@ const Contact = () => {
             type="text"
             placeholder="Votre message"
             name="message"
+            style={{ height: '300px' }}
           />
           <Form.Control.Feedback>Message OK</Form.Control.Feedback>
         </Form.Group>
+        </div>
+        
       </Row>
       <ReCAPTCHA
+        className="captcha"
         sitekey="6LcAv2cdAAAAACdWQeUNIow8VwbiJm2p_XJkNrnk"
         onChange={handleOnChange}
       />

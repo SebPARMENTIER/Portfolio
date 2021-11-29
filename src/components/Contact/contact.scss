@@ -1,0 +1,47 @@
+form {
+  //margin: 1em;
+}
+
+input, textarea {
+  background: #ae18cc;
+  padding: 10px;
+  padding-left: 20px;
+  height: 50px;
+  font-size: 14px;
+  border-radius: 50px;
+  box-shadow: inset 6px 6px 6px #d15a60, inset -6px -6px 6px #ae18cc;
+  margin: 0 0 1em 1em;
+}
+
+textarea::placeholder {
+  //padding-top: 0.5em;
+}
+
+label {
+  color: #ae18cc;
+  margin-left: 1em;
+}
+
+.captcha {
+  margin: 0 0 1em 1em;
+}
+
+button {
+  font-size: 1.2em;
+  border-radius: 6px;
+  margin: 10px;
+  padding: 1em 3em;
+  background-size: 200% auto;
+  color: white;
+  box-shadow: 0 4px 6px rgba(50,50,93,.11), 0 1px 3px rgba(0,0,0,.08);
+  background-image: linear-gradient(to right, #ae18cc 0%, #d15a60 50%, #ae18cc 100%);
+  transition: 0.5s;
+}
+
+button:hover {
+  background-position: right center;
+}
+
+button:disabled {
+  visibility: hidden;
+}

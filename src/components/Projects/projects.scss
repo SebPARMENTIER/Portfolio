@@ -52,9 +52,10 @@
     }
   }
 }
-.projects-card:hover {
+.card:hover {
   transform: scale(1.1);
+  box-shadow: 10px 5px 5px #ad69e2;
 }
-.projects-card {
+.card {
   transition: 0.5s;
 }
