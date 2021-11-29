@@ -29,10 +29,14 @@ const Contact = () => {
     emailjs.sendForm('service_00rzze1', 'template_ygvnq4o', event.target, 'user_KIqGbQLwhpWks7FD3tx7z')
       .then((result) => {
         console.log(result.text);
-      }, (error) => {
+      }
+      , (error) => {
         console.log(error.text);
       });
-  }
+      event.target.reset();
+      grecaptcha.reset();
+      setVerified(false);
+  };
 
   const [verified, setVerified] = useState(false);
 
