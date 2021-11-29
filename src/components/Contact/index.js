@@ -1,0 +1,130 @@
+// == Import npm
+import React, { useState } from 'react';
+import ReCAPTCHA from "react-google-recaptcha";
+import emailjs from 'emailjs-com';
+import {
+  Form,
+  Row,
+  Col,
+} from 'react-bootstrap';
+
+// == Import local
+import './contact.scss';
+
+// == Component
+const Contact = () => {
+  const [validated, setValidated] = useState(false);
+
+  const handleSubmit = (event) => {
+    const form = event.currentTarget;
+    if (form.checkValidity() === false) {
+      event.preventDefault();
+      event.stopPropagation();
+    }
+    setValidated(true);
+  };
+
+  const sendEmail = (event) => {
+    event.preventDefault();
+    emailjs.sendForm('service_00rzze1', 'template_ygvnq4o', event.target, 'user_KIqGbQLwhpWks7FD3tx7z')
+      .then((result) => {
+        console.log(result.text);
+      }, (error) => {
+        console.log(error.text);
+      });
+  }
+
+  const [verified, setVerified] = useState(false);
+
+  const handleOnChange = (value) => {
+    setVerified(true);
+  };
+
+  return (
+    <Form
+      noValidate validated={validated}
+      onSubmit={handleSubmit, sendEmail}
+    >
+      <Row>
+        <Form.Group
+          as={Col}
+          sm="auto"
+          md="auto"
+          lg="auto"
+          controlId="validationLastName"
+        >
+          <Form.Label>Nom</Form.Label>
+          <Form.Control
+            required
+            type="text"
+            placeholder="Votre nom"
+            name="lastname"
+          />
+          <Form.Control.Feedback>Nom OK</Form.Control.Feedback>
+        </Form.Group>
+        <Form.Group
+          as={Col}
+          sm="auto"
+          md="auto"
+          lg="auto"
+          controlId="validationFirstName"
+        >
+          <Form.Label>Prénom</Form.Label>
+          <Form.Control
+            required
+            type="text"
+            placeholder="Votre prénom"
+            name="firstname"
+          />
+          <Form.Control.Feedback>Prénom OK</Form.Control.Feedback>
+        </Form.Group>
+        <Form.Group
+          as={Col}
+          sm="auto"
+          md="auto"
+          lg="auto"
+          controlId="validationEmail"
+        >
+          <Form.Label>Email</Form.Label>
+          <Form.Control
+            required
+            type="email"
+            placeholder="Votre email"
+            name="email"
+          />
+          <Form.Control.Feedback>Email OK</Form.Control.Feedback>
+        </Form.Group>
+        <Form.Group
+          as={Col}
+          sm="auto"
+          md="auto"
+          lg="auto"
+          controlId="validationEmail"
+        >
+          <Form.Label>Message</Form.Label>
+          <Form.Control
+            required
+            as="textarea"
+            type="text"
+            placeholder="Votre message"
+            name="message"
+          />
+          <Form.Control.Feedback>Message OK</Form.Control.Feedback>
+        </Form.Group>
+      </Row>
+      <ReCAPTCHA
+        sitekey="6LcAv2cdAAAAACdWQeUNIow8VwbiJm2p_XJkNrnk"
+        onChange={handleOnChange}
+      />
+      <button
+        disabled={!verified}
+        type="submit"
+      >
+        Envoyer
+      </button>
+    </Form>
+  )
+};
+
+// == Export
+export default Contact;

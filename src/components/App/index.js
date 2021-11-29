@@ -8,6 +8,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import Header from 'src/components/Header';
 import Home from 'src/components/Home';
 import Projects from 'src/components/Projects';
+import Contact from 'src/components/Contact';
 import './app.scss';
 
 // == Composant
@@ -23,6 +24,7 @@ const App = () => (
           </Routes>
           <Home />
           <Projects />
+          <Contact />
         </Col>
       </Row>
     </Container>
