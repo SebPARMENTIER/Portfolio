@@ -16,7 +16,7 @@ import comingSoon from 'src/assets/images/comingSoon.jpg';
 
 // == Component
 const Projects = () => (
-  <div className="projects">
+  <div id="projects" className="projects">
     <Row>
       <Col className="col-sm-auto col-md-auto col-lg-auto">
         <CardGroup>

@@ -18,14 +18,14 @@ const App = () => (
       <Row>
         <Col className="col-sm-auto col-md-auto col-lg-auto">
           <Header />
-          <Routes>
+          {/* <Routes>
             <Route exact path="/" element={<Home/>} />
             <Route exact path="/projects" element={<Projects/>} />
             <Route exact path="/contact" element={<Contact/>} />
-          </Routes>
-          {/* <Home />
+          </Routes> */}
+          <Home />
           <Projects />
-          <Contact /> */}
+          <Contact />
         </Col>
       </Row>
     </Container>

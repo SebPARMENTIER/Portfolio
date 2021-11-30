@@ -46,6 +46,7 @@ const Contact = () => {
 
   return (
     <Form
+      id="contact"
       noValidate validated={validated}
       onSubmit={handleSubmit, sendEmail}
       sm="auto"
@@ -133,6 +134,7 @@ const Contact = () => {
         onChange={handleOnChange}
       />
       <button
+        className="contact-button"
         disabled={!verified}
         type="submit"
       >
