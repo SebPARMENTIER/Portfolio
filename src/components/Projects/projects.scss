@@ -1,4 +1,14 @@
-.projects {  
+.projects { 
+  &-banner {
+    width: 100%;
+    height: auto;
+    background-color: #ad69e2;
+    color: white;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 2em;
+    font-weight: bold;
+  }
   &-cards {
     &-group {
       display: flex;

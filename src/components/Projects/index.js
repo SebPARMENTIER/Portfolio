@@ -18,6 +18,9 @@ import comingSoon from 'src/assets/images/comingSoon.jpg';
 const Projects = () => (
   <div id="projects" className="projects">
     <Row>
+      <div className="projects-banner">
+        MES REALISATIONS
+      </div>
       <Col className="col-sm-auto col-md-auto col-lg-auto">
         <CardGroup>
           <div className="projects-card">
