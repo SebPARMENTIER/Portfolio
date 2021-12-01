@@ -1,20 +1,20 @@
 .projects {
-  padding-top: 4em;
+  padding-top: 4.3em;
   
   &-banner {
-    width: 100%;
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 20px;
     height: auto;
-    background-color: #ad69e2;
+    background: linear-gradient(#770044, #d15a60, #770044);
     color: white;
     text-align: center;
     font-size: 2em;
     font-weight: bold;
+    margin-bottom: 1em;
   }
   &-cards {
-    &-group {
-      display: flex;
-      justify-content: center;
-    }
     &-img {
       width: 100%;
       height: 20vh;
@@ -69,4 +69,14 @@
 }
 .card {
   transition: 0.5s;
+}
+
+.card-group {
+  justify-content: center;
+}
+
+@media (max-width: 576px) {
+  .projects-banner {
+    font-size: 1.2em;
+  }
 }

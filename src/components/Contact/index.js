@@ -136,13 +136,16 @@ const Contact = () => {
         sitekey="6LcAv2cdAAAAACdWQeUNIow8VwbiJm2p_XJkNrnk"
         onChange={handleOnChange}
       />
-      <button
-        className="contact-button"
-        disabled={!verified}
-        type="submit"
-      >
-        Envoyer
-      </button>
+      <div className="contact-button-position">
+        <button
+          className="contact-button"
+          disabled={!verified}
+          type="submit"
+        >
+          Envoyer
+        </button>
+      </div>
+      
     </Form>
   )
 };

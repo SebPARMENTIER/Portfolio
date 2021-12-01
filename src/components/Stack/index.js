@@ -18,7 +18,7 @@ const Stack = () => (
   <div id="stack" className="stack">
     <Row>
       <div className="stack-banner">
-        MES TECHNOLOGIES WEB
+        MES TECHNOS WEB
       </div>
       <div className="stack-kind">
         Languages
