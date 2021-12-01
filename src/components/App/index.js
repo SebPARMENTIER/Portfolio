@@ -7,6 +7,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 // == Import local
 import Header from 'src/components/Header';
 import Home from 'src/components/Home';
+import Stack from 'src/components/Stack'
 import Projects from 'src/components/Projects';
 import Contact from 'src/components/Contact';
 import './app.scss';
@@ -24,6 +25,7 @@ const App = () => (
             <Route exact path="/contact" element={<Contact/>} />
           </Routes> */}
           <Home />
+          <Stack />
           <Projects />
           <Contact />
         </Col>

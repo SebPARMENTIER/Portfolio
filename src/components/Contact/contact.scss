@@ -37,3 +37,17 @@ label {
 button:disabled {
   visibility: hidden;
 }
+
+.contact-banner {
+  width: 100%;
+  height: auto;
+  background-color: #63b4f9;
+  color: white;
+  text-align: center;
+  font-size: 2em;
+  font-weight: bold;
+}
+
+#contact {
+  padding-top: 4em;
+}

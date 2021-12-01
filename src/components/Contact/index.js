@@ -53,6 +53,9 @@ const Contact = () => {
       md="auto"
       lg="auto"
     >
+      <div className="contact-banner">
+        ME CONTACTER
+      </div>
       <Row>
         <div className="name">
         <Form.Group
@@ -121,7 +124,7 @@ const Contact = () => {
             type="text"
             placeholder="Votre message"
             name="message"
-            style={{ height: '300px' }}
+            style={{ height: '180px' }}
           />
           <Form.Control.Feedback>Message OK</Form.Control.Feedback>
         </Form.Group>

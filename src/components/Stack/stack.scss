@@ -1,0 +1,47 @@
+#stack {
+  padding-top: 4em;
+}
+
+.stack {
+  &-banner {
+    width: 100%;
+    height: auto;
+    background-color: #d15a60;
+    color: white;
+    text-align: center;
+    font-size: 2em;
+    font-weight: bold;
+  }
+  &-kind {
+    font-size: 1.2em;
+    padding-top: 1em;
+    margin-left: 1em;
+    color: #ad69e2;
+    text-decoration: underline;
+    margin-bottom: 1em;
+    &-front {
+      color: #ad69e2;
+      margin-bottom: 1em;
+      margin-left: 2em;
+    }
+    &-back {
+      color: #ad69e2;
+      margin-bottom: 1em;
+      margin-left: 2em;
+      margin-top: 1em;
+    }
+  }
+  &-img {
+    margin-left: 1em;
+    &-single {
+      display: inline-block;
+      margin-right: 0.5em;
+      transition: all 0.3s ease-in-out 0s;
+    }
+    &-single:hover {
+      cursor: default;
+      transform: rotateY(360deg);
+      transition: all 0.3s ease-in-out 0s;
+    }
+  }
+}

@@ -14,6 +14,7 @@ const Header = () => (
       <Navbar.Toggle aria-controls="responsive-navbar-nav" />
       <Navbar.Collapse id="responsive-navbar-nav">
         <Nav className="me-auto">
+        <Nav.Link className="header-home-link" style={{color: '#63b4f9'}} href="#stack">Technos</Nav.Link>
           <Nav.Link className="header-home-link" style={{color: '#63b4f9'}} href="#projects">Réalisations</Nav.Link>
           <Nav.Link className="header-home-link" style={{color: '#63b4f9'}} href="#contact">Contact</Nav.Link>
         </Nav>

@@ -1,11 +1,12 @@
-.projects { 
+.projects {
+  padding-top: 4em;
+  
   &-banner {
     width: 100%;
     height: auto;
     background-color: #ad69e2;
     color: white;
     text-align: center;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 2em;
     font-weight: bold;
   }
