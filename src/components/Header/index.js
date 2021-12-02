@@ -1,6 +1,6 @@
 // == Import npm
 import React from 'react';
-import { Nav, Navbar, Container, Row, Col } from 'react-bootstrap';
+import { Nav, Navbar, Container } from 'react-bootstrap';
 import { BsGithub, BsLinkedin } from 'react-icons/bs';
 
 // == Import local
@@ -39,32 +39,6 @@ const Header = () => (
       </Navbar.Collapse>
     </Container>
   </Navbar>
-  // <div className="header">
-  //   <div className="header-home">
-  //     <Row>
-  //       <Col className="col-sm-auto col-md-auto col-lg-auto">
-  //         <Link
-  //           className="header-home-link"
-  //           to="/"
-  //         >
-  //           Home
-  //         </Link>
-  //         <Link
-  //           className="header-home-link"
-  //           to="/projects"
-  //         >
-  //           Réalisations
-  //         </Link>
-  //         <Link
-  //           className="header-home-link"
-  //           to="/#contact"
-  //         >
-  //           Contact
-  //         </Link>
-  //       </Col>
-  //     </Row>
-  //   </div>
-  // </div>
 );
 
 // == Export
