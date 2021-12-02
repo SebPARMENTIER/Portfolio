@@ -8,7 +8,7 @@ import './header.scss';
 
 // == Component
 const Header = () => (
-  <Navbar fixed="top" collapseOnSelect expand="sm md lg" bg="black" variant="dark">
+  <Navbar fixed="top" collapseOnSelect expand="lg" bg="black" variant="dark">
     <Container>
       <Navbar.Brand className="header-home-link" style={{color: '#d15a60'}} href="#">Sébastien PARMENTIER</Navbar.Brand>
       <Navbar.Toggle aria-controls="responsive-navbar-nav" />
