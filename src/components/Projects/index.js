@@ -21,9 +21,12 @@ const Projects = () => (
       <div className="projects-banner">
         MES REALISATIONS
       </div>
+      <div className="projects-intro">
+        Voici quelques réalisations effectuées pendant ma formation. D'autres projets sont en cours d'élaboration et seront disponibles courant 2022.
+      </div>
       <Col className="col-sm-auto col-md-auto col-lg-auto">
         <CardGroup>
-          <div className="projects-card">
+          <div className="projects-cards">
             <Card style={{ width: '18rem', margin: '1em' }}>
               <Card.Img
                 className="projects-cards-img"

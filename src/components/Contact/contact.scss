@@ -28,11 +28,12 @@ label {
   background-size: 200% auto;
   color: white;
   box-shadow: 0 4px 6px rgba(50,50,93,.11), 0 1px 3px rgba(0,0,0,.08);
-  background-image: linear-gradient(to right, #ae18cc 0%, #d15a60 50%, #ae18cc 100%);
+  background-image: linear-gradient(to right, #770044 0%, #d15a60 50%, #770044 100%);
   transition: 0.5s;
 
   &-position {
     text-align: center;
+    margin-bottom: 15em;
   }
 }
 
