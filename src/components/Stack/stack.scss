@@ -58,4 +58,14 @@
   .stack-banner {
     font-size: 1.2em;
   }
+
+  .stack {
+    &-kind {
+      font-size: 1em;
+    
+      &-front, &-back {
+        font-size: 0.8em;
+      }
+    }
+  }
 }

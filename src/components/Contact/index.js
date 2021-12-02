@@ -56,6 +56,9 @@ const Contact = () => {
       <div className="contact-banner">
         ME CONTACTER
       </div>
+      <div className="contact-intro">
+        Vous pouvez me contacter en remplissant le formulaire ci-dessous. Je vous répondrai dans les meilleurs délais.
+      </div>
       <Row>
         <div className="name">
         <Form.Group
