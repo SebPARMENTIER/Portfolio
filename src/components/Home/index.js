@@ -28,7 +28,7 @@ const Home = () => (
               Pour en savoir plus sur mon parcours, n'hésitez pas à télécharger mon cv.
             </div>
             <div className="home-button">
-              <Link to={cv} target="_blank" download>
+              <Link to={cv} target="_blank" download="CV PARMENTIER Sébastien.pdf">
                 <button className="home-button-load">
                   Mon CV
                 </button>
