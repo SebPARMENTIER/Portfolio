@@ -49,8 +49,8 @@ button:disabled {
   width: 75%;
   margin-left: auto;
   margin-right: auto;
+  padding: 0.2em 0;
   border-radius: 20px;
-  height: auto;
   background: linear-gradient(#770044, #d15a60, #770044);
   color: white;
   text-align: center;
@@ -71,7 +71,7 @@ button:disabled {
 }
 
 .name, .mail, .message {
-  width: 60%;
+  width: 85%;
   display: flex;
   flex-direction: column;
 }
@@ -83,5 +83,9 @@ button:disabled {
 @media (max-width: 576px) {
   .contact-banner {
     font-size: 1.2em;
+    padding: 0.3125em 0.625em;
+  }
+  .contact-intro {
+    font-size: 1em;
   }
 }

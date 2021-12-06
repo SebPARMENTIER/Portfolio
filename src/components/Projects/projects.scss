@@ -5,8 +5,8 @@
     width: 75%;
     margin-left: auto;
     margin-right: auto;
+    padding: 0.2em 0;
     border-radius: 20px;
-    height: auto;
     background: linear-gradient(#770044, #d15a60, #770044);
     color: white;
     text-align: center;
@@ -41,9 +41,11 @@
     &-text {
       color: #d15a60;
       text-align: center;
+      line-height: 1.5em;
     }
     &-links {
       text-align: center;
+      margin-top: 1em;
     }
     &-link {
       color: #63b4f9;
@@ -88,8 +90,28 @@
 @media (max-width: 576px) {
   .projects-banner {
     font-size: 1.2em;
+    padding: 0.3125em 0.625em;
+  }
+  .projects-intro {
+    font-size: 1em;
+    margin: 1em 0;
   }
   .card {
     margin: 0 0 2em 0 !important;
+  }
+  .card-group {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .projects-cards-title {
+    font-size: 1.2em;
+  }
+  .projects-cards-text {
+    font-size: 1em;
+    line-height: normal;
+  }
+  .projects-cards-links {
+    margin-top: 1em;
   }
 }

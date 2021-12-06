@@ -4,8 +4,8 @@
 
   &-position {
     display: flex;
-    height: 90vh;
-    margin: 0 1em;
+    height: 75vh;
+    margin: 3em 1em 10em 1em;
   }
 
   &-text {
@@ -27,12 +27,14 @@
     }
 
     &-content {
-      text-align: justify;
-      font-size: 1.2em;
+      text-align: center;
+      font-size: 1.3em;
+      line-height: 1.5em;
+      margin: 0 5em;
     }
   }
   &-button-intro {
-    font-size: 1.2em;
+    font-size: 1.3em;
   }
   &-button-load {
     font-size: 1.2em;
@@ -84,6 +86,8 @@
 
     &-content {
       font-size: 0.8em;
+      line-height: normal;
+      margin: 0 1em;
     }
   }
   .home-button-intro {
@@ -91,5 +95,8 @@
   }
   .home-button-load {
     font-size: 1em;
+  }
+  .home-position {
+    margin: 0 1em 4em 1em;
   }
 }
