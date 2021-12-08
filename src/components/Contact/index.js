@@ -24,11 +24,16 @@ const Contact = () => {
     setValidated(true);
   };
 
+  const [mailSent, setMailSent] = useState(false);
+
   const sendEmail = (event) => {
     event.preventDefault();
     emailjs.sendForm('service_00rzze1', 'template_ygvnq4o', event.target, 'user_KIqGbQLwhpWks7FD3tx7z')
       .then((result) => {
         console.log(result.text);
+        if (result.text === 'OK') {
+          setMailSent(true)
+        };
       }
       , (error) => {
         console.log(error.text);
@@ -40,14 +45,16 @@ const Contact = () => {
 
   const [verified, setVerified] = useState(false);
 
-  const handleOnChange = (value) => {
+  const handleOnChange = () => {
     setVerified(true);
+    setMailSent(false);
   };
 
   return (
     <Form
       id="contact"
-      noValidate validated={validated}
+      noValidate
+      validated={validated}
       onSubmit={handleSubmit, sendEmail}
       sm="auto"
       md="auto"
@@ -139,6 +146,9 @@ const Contact = () => {
         sitekey="6LcAv2cdAAAAACdWQeUNIow8VwbiJm2p_XJkNrnk"
         onChange={handleOnChange}
       />
+      <div className={mailSent ? "mail-sent" : "mail-no-sent"}>
+        Votre message a bien été envoyé.
+      </div>
       <div className="contact-button-position">
         <button
           className="contact-button"
@@ -148,7 +158,6 @@ const Contact = () => {
           Envoyer
         </button>
       </div>
-      
     </Form>
   )
 };

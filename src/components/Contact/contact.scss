@@ -80,6 +80,15 @@ button:disabled {
   justify-content: center;
 }
 
+.mail-sent {
+  color: white;
+  text-align: center;
+}
+
+.mail-no-sent {
+  visibility: hidden;
+}
+
 @media (max-width: 576px) {
   .contact-banner {
     font-size: 1.2em;
