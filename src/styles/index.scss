@@ -4,3 +4,15 @@
 body {
   font-family: 'Quicksand', sans-serif !important;
 }
+
+body::-webkit-scrollbar {
+  width: 0.8em;
+}
+
+body::-webkit-scrollbar-track {
+  background-color: black;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #ad69e2;
+} 
