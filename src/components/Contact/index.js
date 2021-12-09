@@ -13,41 +13,39 @@ import './contact.scss';
 
 // == Component
 const Contact = () => {
-  const [validated, setValidated] = useState(false);
-
-  const handleSubmit = async (event) => {
-    const form = event.currentTarget;
-    if (form.checkValidity() === false) {
-      event.preventDefault();
-      event.stopPropagation();
-    }
-    setValidated(true);
-  };
-
   const [mailSent, setMailSent] = useState(false);
 
   const sendEmail = (event) => {
     event.preventDefault();
-    handleSubmit(event);
-    if (validated === true) {
-      emailjs.sendForm('service_00rzze1', 'template_ygvnq4o', event.target, 'user_KIqGbQLwhpWks7FD3tx7z')
-      .then((result) => {
-        console.log(result.text);
-        if (result.text === 'OK') {
-          setMailSent(true)
-        };
-      }
-      , (error) => {
-        console.log(error.text);
-      });
-      event.target.reset();
-      grecaptcha.reset();
-      setVerified(false);
-      setValidated(false);
-    } else {
-      handleSubmit(event);
-    } 
-    
+    emailjs.sendForm('service_00rzze1', 'template_ygvnq4o', event.target, 'user_KIqGbQLwhpWks7FD3tx7z')
+    .then((result) => {
+      console.log(result.text);
+      if (result.text === 'OK') {
+        setMailSent(true)
+      };
+    }
+    , (error) => {
+      console.log(error.text);
+    });
+    event.target.reset();
+    grecaptcha.reset();
+    setVerified(false);
+    setValidated(false);
+  };
+  
+  const [validated, setValidated] = useState(false);
+
+  const handleSubmit = (event) => {
+    const form = event.currentTarget;
+    if (form.checkValidity() === true) {
+      event.preventDefault();
+      setValidated(true);
+      sendEmail(event);
+    } else if (form.checkValidity() === false) {
+      event.preventDefault();
+      event.stopPropagation();
+      setValidated(true);
+    };
   };
 
   const [verified, setVerified] = useState(false);
@@ -62,7 +60,7 @@ const Contact = () => {
       id="contact"
       noValidate
       validated={validated}
-      onSubmit={sendEmail}
+      onSubmit={handleSubmit}
       sm="auto"
       md="auto"
       lg="auto"
