@@ -13,6 +13,11 @@ label {
   text-shadow: -8px 0px 6px rgba(98, 54, 128, 1),8px 0px 6px rgba(98, 54, 128, 1),0px 8px 6px rgba(98, 54, 128, 1),0px -8px 6px rgba(98, 54, 128, 1);
 }
 
+.no-captcha {
+  visibility: hidden;
+  height: 0;
+}
+
 .captcha {
   margin-bottom: 1em;
   display: flex;

@@ -10,9 +10,12 @@ import {
 
 // == Import local
 import './contact.scss';
+import Loading from 'src/components/Loading';
 
 // == Component
 const Contact = () => {
+  const [isLoading, setIsLoading] = useState(false);
+
   const [mailSent, setMailSent] = useState(false);
 
   const sendEmail = (event) => {
@@ -21,7 +24,8 @@ const Contact = () => {
     .then((result) => {
       console.log(result.text);
       if (result.text === 'OK') {
-        setMailSent(true)
+        setIsLoading(false);
+        setMailSent(true);
       };
     }
     , (error) => {
@@ -37,6 +41,7 @@ const Contact = () => {
 
   const handleSubmit = (event) => {
     const form = event.currentTarget;
+    setIsLoading(true);
     if (form.checkValidity() === true) {
       event.preventDefault();
       setValidated(true);
@@ -45,6 +50,7 @@ const Contact = () => {
       event.preventDefault();
       event.stopPropagation();
       setValidated(true);
+      setIsLoading(false);
     };
   };
 
@@ -149,10 +155,11 @@ const Contact = () => {
         
       </Row>
       <ReCAPTCHA
-        className="captcha"
+        className={isLoading ? "no-captcha" : "captcha"}
         sitekey="6LcAv2cdAAAAACdWQeUNIow8VwbiJm2p_XJkNrnk"
         onChange={handleOnChange}
       />
+      {isLoading && (<Loading />)}
       <div className={mailSent ? "mail-sent" : "mail-no-sent"}>
         Votre message a bien été envoyé.
       </div>
