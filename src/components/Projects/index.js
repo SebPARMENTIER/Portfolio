@@ -27,6 +27,41 @@ const Projects = () => (
       </div>
       <Col className="col-sm-auto col-md-auto col-lg-auto">
         <CardGroup>
+        <div className="projects-card">
+            <Card style={{ width: '18rem', margin: '1em' }}>
+              <Card.Img
+                className="projects-cards-img"
+                variant="top"
+                src={rickAndMorty}
+                alt="Rick and Morty"
+              />
+              <Card.Body className="projects-cards-body">
+                <Card.Title className="projects-cards-title">
+                  Rick and Morty
+                </Card.Title>
+                <Card.Text className="projects-cards-text">
+                  Projet personnel.
+                  Retrouvez tous les personnages, saisons et épisodes de votre série et jouez à un mini jeu.
+                </Card.Text>
+                <div className="projects-cards-links">
+                  <Card.Link
+                    className="projects-cards-link"
+                    href="https://seb-rick-and-morty.netlify.app/"
+                    target="_blank"
+                  >
+                    Go to Rick & Morty
+                  </Card.Link>
+                  <Card.Link
+                    className="projects-cards-link"
+                    href="https://github.com/SebPARMENTIER/Rick-And-Morty"
+                    target="_blank"
+                  >
+                    GitHub Page
+                  </Card.Link>
+                </div>
+              </Card.Body>
+            </Card>
+          </div>
           <div className="projects-cards">
             <Card style={{ width: '18rem', margin: '1em' }}>
               <Card.Img
@@ -89,41 +124,6 @@ const Projects = () => (
                   <Card.Link
                     className="projects-cards-link"
                     href="https://github.com/SebPARMENTIER/Converter"
-                    target="_blank"
-                  >
-                    GitHub Page
-                  </Card.Link>
-                </div>
-              </Card.Body>
-            </Card>
-          </div>
-          <div className="projects-card">
-            <Card style={{ width: '18rem', margin: '1em' }}>
-              <Card.Img
-                className="projects-cards-img"
-                variant="top"
-                src={rickAndMorty}
-                alt="Rick and Morty"
-              />
-              <Card.Body className="projects-cards-body">
-                <Card.Title className="projects-cards-title">
-                  Rick and Morty
-                </Card.Title>
-                <Card.Text className="projects-cards-text">
-                  Projet personnel.
-                  Retrouvez tous les personnages, saisons et épisodes de votre série et jouez à un mini jeu.
-                </Card.Text>
-                <div className="projects-cards-links">
-                  <Card.Link
-                    className="projects-cards-link"
-                    href="https://seb-rick-and-morty.netlify.app/"
-                    target="_blank"
-                  >
-                    Go to Rick & Morty
-                  </Card.Link>
-                  <Card.Link
-                    className="projects-cards-link"
-                    href="https://github.com/SebPARMENTIER/Rick-And-Morty"
                     target="_blank"
                   >
                     GitHub Page

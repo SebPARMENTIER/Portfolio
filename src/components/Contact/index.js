@@ -20,7 +20,7 @@ const Contact = () => {
 
   const sendEmail = (event) => {
     event.preventDefault();
-    emailjs.sendForm('service_00rzze1', 'template_ygvnq4o', event.target, 'user_KIqGbQLwhpWks7FD3tx7z')
+    emailjs.sendForm(process.env.SERVICE_EMAILJS, process.env.TEMPLATE_EMAILJS, event.target, process.env.USER_EMAILJS)
     .then((result) => {
       console.log(result.text);
       if (result.text === 'OK') {
@@ -60,6 +60,8 @@ const Contact = () => {
     setVerified(true);
     setMailSent(false);
   };
+
+  const sitekey = process.env.CAPTCHA_SITEKEY;
 
   return (
     <Form
@@ -156,7 +158,7 @@ const Contact = () => {
       </Row>
       <ReCAPTCHA
         className={isLoading ? "no-captcha" : "captcha"}
-        sitekey="6LcAv2cdAAAAACdWQeUNIow8VwbiJm2p_XJkNrnk"
+        sitekey={sitekey}
         onChange={handleOnChange}
       />
       {isLoading && (<Loading />)}
