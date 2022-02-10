@@ -7,6 +7,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 // == Import local
 import Header from 'src/components/Header';
 import Home from 'src/components/Home';
+import Skills from 'src/components/Skills';
 import Stack from 'src/components/Stack'
 import Projects from 'src/components/Projects';
 import Contact from 'src/components/Contact';
@@ -19,12 +20,8 @@ const App = () => (
       <Row>
         <Col className="col-sm-auto col-md-auto col-lg-auto">
           <Header />
-          {/* <Routes>
-            <Route exact path="/" element={<Home/>} />
-            <Route exact path="/projects" element={<Projects/>} />
-            <Route exact path="/contact" element={<Contact/>} />
-          </Routes> */}
           <Home />
+          <Skills />
           <Stack />
           <Projects />
           <Contact />

@@ -1,0 +1,77 @@
+.skills {
+  text-align: center;
+  padding-top: 4.3em;
+
+  &-banner {
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0.2em 0;
+    border-radius: 20px;
+    background: linear-gradient(#770044, #d15a60, #770044);
+    color: white;
+    text-align: center;
+    font-size: 2em;
+    font-weight: bold;
+  }
+
+  &-position {
+    display: flex;
+    height: 75vh;
+    margin: 3em 1em 10em 1em;
+  }
+
+  &-text {
+    width: 100vw;
+    border: 2px solid #770044;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 0 1.5em;
+    color: white;  
+    
+    &-function {
+      font-size: 2em;
+    }
+
+    &-content {
+      text-align: center;
+      font-size: 1.3em;
+      line-height: 1.5em;
+      margin: 0 5em;
+    }
+  }
+}
+
+.span1 {
+  text-shadow: -8px 0px 6px rgba(209, 90, 96, 1),8px 0px 6px rgba(209, 90, 96, 1),0px 8px 6px rgba(209, 90, 96, 1),0px -8px 6px rgba(209, 90, 96, 1);
+}
+
+.span2 {
+  text-shadow: -8px 0px 6px rgba(99, 180, 249, 1),8px 0px 6px rgba(99, 180, 249, 1),0px 8px 6px rgba(99, 180, 249, 1),0px -8px 6px rgba(99, 180, 249, 1);
+}
+
+@media (max-width: 576px) {
+  .skills-banner {
+    font-size: 1.2em;
+    padding: 0.3125em 0.625em;
+    margin-bottom: 1em;
+  }
+
+  .skills-text {
+    &-function {
+      font-size: 1em;
+    }
+
+    &-content {
+      font-size: 0.8em;
+      line-height: normal;
+      margin: 0 1em;
+    }
+  }
+  
+  .skills-position {
+    margin: 0 1em 4em 1em;
+  }
+}
