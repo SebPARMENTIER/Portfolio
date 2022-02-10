@@ -14,7 +14,7 @@ const Home = () => (
       <Col className="col-sm-auto col-md-auto col-lg-auto">
         <div className="home-position">
           <div className="home-text">
-            <div className="home-text-hello">Bonjour, je suis <span className="span3" >Sébastien PARMENTIER</span>.</div>
+            <div className="home-text-hello">Bonjour, je m'appelle <span className="span3" >Sébastien PARMENTIER</span>.</div>
             <div className="home-text-function">
               Je suis <span className="span1">développeur web fullstack</span> basé à Limoges.
             </div>
@@ -23,6 +23,9 @@ const Home = () => (
             </div>
             <div className="home-text-content">
               Côté front, je suis spécialisé <span className="span2">React JS</span> avec <span className="span2">Redux</span>. Côté back, j'ai acquis un savoir-faire avec <span className="span2">Node.js, Express.js</span>. Concernant les systèmes de gestion de base de données, je sais utiliser <span className="span2">Postgres</span> avec des requêtes <span className="span2">SQL</span> ou avec l'ORM <span className="span2">Sequelize</span>.
+            </div>
+            <div className="home-text-content">
+              Titulaire du titre professionnel "Développeur Web et Web mobile", je suis à la recherche d'un premier emploi en tant que Développeur Web Fullstack ou Front-end sur Limoges et ses environs ou en télétravail.
             </div>
             <div className="home-button-intro">
               Pour en savoir plus sur mon parcours, n'hésitez pas à télécharger mon cv.
