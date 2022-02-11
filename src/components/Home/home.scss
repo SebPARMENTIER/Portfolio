@@ -77,7 +77,7 @@
 @media (max-width: 576px) {
   .home-text {
     padding: 0;
-    
+
     &-hello {
       font-size: 1em;
     }
@@ -100,5 +100,6 @@
   }
   .home-position {
     margin: 0 1em 4em 1em;
+    height: 80vh;
   }
 }

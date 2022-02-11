@@ -62,10 +62,6 @@
   .skills-text {
     padding: 0;
 
-    &-position {
-      height: 70vh;
-    }
-
     &-function {
       font-size: 1em;
     }
@@ -79,5 +75,6 @@
   
   .skills-position {
     margin: 0 1em 4em 1em;
+    height: 70vh;
   }
 }
