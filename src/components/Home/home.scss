@@ -76,6 +76,8 @@
 
 @media (max-width: 576px) {
   .home-text {
+    padding: 0;
+    
     &-hello {
       font-size: 1em;
     }
