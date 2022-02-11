@@ -61,7 +61,11 @@
 
   .skills-text {
     padding: 0;
-    
+
+    &-position {
+      height: 70vh;
+    }
+
     &-function {
       font-size: 1em;
     }
