@@ -15,6 +15,7 @@ import rickAndMorty from 'src/assets/images/rick-and-morty.png';
 import pokedex from 'src/assets/images/pokedex.png';
 import comingSoon from 'src/assets/images/comingSoon.jpg';
 import battle from 'src/assets/images/battle_capture.PNG';
+import staff from 'src/assets/images/staff.png';
 
 // == Component
 const Projects = () => (
@@ -29,40 +30,75 @@ const Projects = () => (
       <Col className="col-sm-auto col-md-auto col-lg-auto">
         <CardGroup>
         <div className="projects-card">
-            <Card style={{ width: '18rem', margin: '1em' }}>
-              <Card.Img
-                className="projects-cards-img"
-                variant="top"
-                src={battle}
-                alt="Battle-Card-Game"
-              />
-              <Card.Body className="projects-cards-body">
-                <Card.Title className="projects-cards-title">
-                  Battle Card Game
-                </Card.Title>
-                <Card.Text className="projects-cards-text">
-                  Projet personnel.
-                  Affrontez votre adversaire dans le célèbre jeu de cartes "la bataille". Recommandé sur smartphone ou tablette.
-                </Card.Text>
-                <div className="projects-cards-links">
-                  <Card.Link
-                    className="projects-cards-link"
-                    href="https://seb-battle.netlify.app/"
-                    target="_blank"
-                  >
-                    Go to Battle Game
-                  </Card.Link>
-                  <Card.Link
-                    className="projects-cards-link"
-                    href="https://github.com/SebPARMENTIER/Battle-Card-Game"
-                    target="_blank"
-                  >
-                    GitHub Page
-                  </Card.Link>
-                </div>
-              </Card.Body>
-            </Card>
-          </div>
+          <Card style={{ width: '18rem', margin: '1em' }}>
+            <Card.Img
+              className="projects-cards-img"
+              variant="top"
+              src={staff}
+              alt="Staff"
+            />
+            <Card.Body className="projects-cards-body">
+              <Card.Title className="projects-cards-title">
+                Staff
+              </Card.Title>
+              <Card.Text className="projects-cards-text">
+                Case Study.
+                Projet fullstack responsive pour consulter, créer, modifier ou supprimer une carte de restaurant.
+              </Card.Text>
+              <div className="projects-cards-links">
+                <Card.Link
+                  className="projects-cards-link"
+                  href="https://seb-staff.netlify.app/"
+                  target="_blank"
+                >
+                  Go to Staff
+                </Card.Link>
+                <Card.Link
+                  className="projects-cards-link"
+                  href="https://github.com/SebPARMENTIER/Staff-front"
+                  target="_blank"
+                >
+                  GitHub Page
+                </Card.Link>
+              </div>
+            </Card.Body>
+          </Card>
+        </div>
+        <div className="projects-card">
+          <Card style={{ width: '18rem', margin: '1em' }}>
+            <Card.Img
+              className="projects-cards-img"
+              variant="top"
+              src={battle}
+              alt="Battle-Card-Game"
+            />
+            <Card.Body className="projects-cards-body">
+              <Card.Title className="projects-cards-title">
+                Battle Card Game
+              </Card.Title>
+              <Card.Text className="projects-cards-text">
+                Projet personnel.
+                Affrontez votre adversaire dans le célèbre jeu de cartes "la bataille". Recommandé sur smartphone ou tablette.
+              </Card.Text>
+              <div className="projects-cards-links">
+                <Card.Link
+                  className="projects-cards-link"
+                  href="https://seb-battle.netlify.app/"
+                  target="_blank"
+                >
+                  Go to Battle Game
+                </Card.Link>
+                <Card.Link
+                  className="projects-cards-link"
+                  href="https://github.com/SebPARMENTIER/Battle-Card-Game"
+                  target="_blank"
+                >
+                  GitHub Page
+                </Card.Link>
+              </div>
+            </Card.Body>
+          </Card>
+        </div>
         <div className="projects-card">
             <Card style={{ width: '18rem', margin: '1em' }}>
               <Card.Img
