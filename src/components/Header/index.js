@@ -2,6 +2,7 @@
 import React from 'react';
 import { Nav, Navbar, Container } from 'react-bootstrap';
 import { BsGithub, BsLinkedin } from 'react-icons/bs';
+import { AiFillGitlab } from 'react-icons/ai';
 
 // == Import local
 import './header.scss';
@@ -35,6 +36,14 @@ const Header = () => (
             target="_blank"
           >
             <BsGithub />
+          </Nav.Link>
+          <Nav.Link
+            className="header-home-link"
+            style={{color: '#63b4f9'}}
+            href="https://gitlab.com/SebPARMENTIER"
+            target="_blank"
+          >
+            <AiFillGitlab />
           </Nav.Link>
         </Nav>
       </Navbar.Collapse>
